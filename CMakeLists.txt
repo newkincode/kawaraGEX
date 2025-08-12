@@ -4,17 +4,22 @@ project(kawaraGEX LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/lib" CACHE PATH "Extra prefix for CMake packages")
 
-find_package(SDL3 REQUIRED)
-
-target_include_directories(kawaraGEX PRIVATE
-        ${CMAKE_SOURCE_DIR}/include
-)
-
-target_link_directories(kawaraGEX PRIVATE
-        ${CMAKE_SOURCE_DIR}/lib
-)
-
-add_library(
+add_library(kawaraGEX SHARED
         src/core/Engine.cpp
+)
+
+target_link_directories(kawaraGEX PRIVATE ${CMAKE_SOURCE_DIR}/lib)
+target_include_directories(kawaraGEX
+        PUBLIC  ${CMAKE_SOURCE_DIR}/include
+        PRIVATE ${CMAKE_SOURCE_DIR}/include/SDL3
+)
+target_link_libraries(kawaraGEX PRIVATE
+        ${CMAKE_SOURCE_DIR}/lib/SDL3-static.lib
+        winmm
+        setupapi
+        cfgmgr32
+        version
+        imm32
 )

@@ -3,6 +3,9 @@
 
 
 class Engine {
+    public:
+        Engine();
+        void openWindow();
 };
 
 
