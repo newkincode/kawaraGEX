@@ -39,3 +39,12 @@
 
 # debug information files
 *.dwo
+
+# cmake build debug
+cmake-build-debug
+
+# CLion settings
+.idea
+
+# VSC settings
+.vscode
