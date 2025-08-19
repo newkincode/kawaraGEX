@@ -8,11 +8,20 @@ set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/lib" CACHE PATH "Extra prefix for CMa
 
 add_library(kawaraGEX SHARED
         src/core/Engine.cpp
+        src/core/Object.cpp
+        src/core/attachments/Transform.cpp
+        src/scene/Scene.cpp
+        src/scene/GameObject.cpp
+        include/GEX/core/Engine.h
+        include/GEX/core/Object.h
+        include/GEX/core/attachments/Transform.h
+        include/GEX/scene/Scene.h
+        include/GEX/scene/GameObject.h
 )
 
 target_link_directories(kawaraGEX PRIVATE ${CMAKE_SOURCE_DIR}/lib)
 target_include_directories(kawaraGEX
-        PUBLIC  ${CMAKE_SOURCE_DIR}/include
+        PUBLIC ${CMAKE_SOURCE_DIR}/include/GEX
         PRIVATE ${CMAKE_SOURCE_DIR}/include/SDL3
 )
 target_link_libraries(kawaraGEX PRIVATE
