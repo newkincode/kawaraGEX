@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2025 KawaraGEX. All rights reserved.
+// Copyright (c) 2025 KawaraGEX.
 //
 
 #include "scene/Scene.h"

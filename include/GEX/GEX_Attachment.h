@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2025 KawaraGEX. All rights reserved.
+// Copyright (c) 2025 KawaraGEX.
 //
 
 #ifndef KAWARAGEX_ATTACHMENTS_H
