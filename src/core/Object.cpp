@@ -1,4 +1,4 @@
-#include "core/Object.h"
+#include "GEX_Object.h"
 
 using namespace GEX;
 

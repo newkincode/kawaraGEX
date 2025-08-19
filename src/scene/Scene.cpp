@@ -1,4 +1,4 @@
-#include "scene/Scene.h"
+#include "GEX_Scene.h"
 
 using namespace GEX;
 

@@ -1,7 +1,3 @@
-//
-// Copyright (c) 2025 KawaraGEX. All rights reserved.
-//
-
 #ifndef KAWARAGEX_TRANSFORM_H
 #define KAWARAGEX_TRANSFORM_H
 #include "core/Attachment.h"

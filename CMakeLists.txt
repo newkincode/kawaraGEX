@@ -12,11 +12,7 @@ add_library(kawaraGEX SHARED
         src/core/attachments/Transform.cpp
         src/scene/Scene.cpp
         src/scene/GameObject.cpp
-        include/GEX/core/Engine.h
-        include/GEX/core/Object.h
-        include/GEX/core/attachments/Transform.h
-        include/GEX/scene/Scene.h
-        include/GEX/scene/GameObject.h
+        include/GEX/GEX.h
 )
 
 target_link_directories(kawaraGEX PRIVATE ${CMAKE_SOURCE_DIR}/lib)

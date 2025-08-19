@@ -1,4 +1,4 @@
-#include "scene/GameObject.h"
+#include "GEX_GameObject.h"
 
 using namespace GEX;
 
