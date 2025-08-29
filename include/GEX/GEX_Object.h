@@ -7,8 +7,7 @@
 
 namespace GEX {
   class Object {
-  public:
-    Object();
+    void destroy();
   };
 }
 

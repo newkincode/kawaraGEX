@@ -4,15 +4,15 @@
 
 #ifndef KAWARAGEX_TRANSFORM_H
 #define KAWARAGEX_TRANSFORM_H
-#include "core/Attachment.h"
+#include "GEX_Attachment.h"
 
 
 namespace GEX {
   class Transform : public Attachment {
   public:
-    void setX(double x);
+    void setX(const double x);
 
-    void setY(double y);
+    void setY(const double y);
 
     [[nodiscard]] double getX() const;
 

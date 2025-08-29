@@ -2,9 +2,8 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#include "GEX_Object.h"
+#include "GEX_Camera.h"
 
 using namespace GEX;
 
-void Object::destroy() {
-}
+Camera::Camera() = default;

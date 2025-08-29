@@ -4,11 +4,12 @@
 
 #ifndef KAWARAGEX_GAMEOBJECT_H
 #define KAWARAGEX_GAMEOBJECT_H
+#include "GEX_Transform.h"
 
 namespace GEX {
-  class GameObject {
-    public:
-      GameObject();
+  class GameObject : public Transform {
+  public:
+    void destroy();
   };
 }
 
