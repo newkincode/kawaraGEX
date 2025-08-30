@@ -2,8 +2,8 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef KAWARAGEX_TRANSFORM_H
-#define KAWARAGEX_TRANSFORM_H
+#ifndef GEX_TRANSFORM_H
+#define GEX_TRANSFORM_H
 #include "GEX_Attachment.h"
 
 
@@ -25,4 +25,4 @@ namespace GEX {
 }
 
 
-#endif //KAWARAGEX_TRANSFORM_H
+#endif //GEX_TRANSFORM_H

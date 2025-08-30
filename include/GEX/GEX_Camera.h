@@ -2,8 +2,8 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef CAMERA_H
-#define CAMERA_H
+#ifndef GEX_CAMERA_H
+#define GEX_CAMERA_H
 
 #include "GEX_GameObject.h"
 
@@ -14,4 +14,4 @@ namespace GEX {
   };
 }
 
-#endif //CAMERA_H
+#endif //GEX_CAMERA_H

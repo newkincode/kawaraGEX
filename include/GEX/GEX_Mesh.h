@@ -2,8 +2,8 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef MESH_H
-#define MESH_H
+#ifndef GEX_MESH_H
+#define GEX_MESH_H
 
 #include "GEX_Attachment.h"
 
@@ -12,4 +12,4 @@ namespace GEX {
   };
 }
 
-#endif //MESH_H
+#endif //GEX_MESH_H

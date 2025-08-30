@@ -2,28 +2,25 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef KAWARAGEX_OBJECT_H
-#define KAWARAGEX_OBJECT_H
+#ifndef GEX_OBJECT_H
+#define GEX_OBJECT_H
 #include <cstdint>
+
+#include "GEX_Id.h"
 
 namespace GEX {
   class Object {
   public:
-    Object();
-
     virtual void destroy();
 
     virtual void onDestroy() {
     }
 
-    [[nodiscard]] uint32_t getEntityId() const;
-
-    bool operator==(const Object &other) const;
+    [[nodiscard]] GEX_Id getEntityId() const;
 
   private:
-    uint32_t entityID;
-    inline static int counter = 0;
+    GEX_Id entityID;
   };
 }
 
-#endif //KAWARAGEX_OBJECT_H
+#endif //GEX_OBJECT_H

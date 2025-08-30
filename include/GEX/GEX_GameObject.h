@@ -2,8 +2,9 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef KAWARAGEX_GAMEOBJECT_H
-#define KAWARAGEX_GAMEOBJECT_H
+#ifndef GEX_GAMEOBJECT_H
+#define GEX_GAMEOBJECT_H
+
 #include "GEX_Scene.h"
 #include "GEX_Transform.h"
 
@@ -19,4 +20,4 @@ namespace GEX {
   };
 }
 
-#endif //KAWARAGEX_GAMEOBJECT_H
+#endif //GEX_GAMEOBJECT_H

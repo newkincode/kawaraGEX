@@ -2,8 +2,8 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef KAWARAGEX_ATTACHMENTS_H
-#define KAWARAGEX_ATTACHMENTS_H
+#ifndef GEX_ATTACHMENTS_H
+#define GEX_ATTACHMENTS_H
 
 
 namespace GEX {
@@ -12,4 +12,4 @@ namespace GEX {
 }
 
 
-#endif //KAWARAGEX_ATTACHMENTS_H
+#endif //GEX_ATTACHMENTS_H

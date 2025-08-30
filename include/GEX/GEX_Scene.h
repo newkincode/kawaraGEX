@@ -2,8 +2,8 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef KAWARAGEX_SCENE_H
-#define KAWARAGEX_SCENE_H
+#ifndef GEX_SCENE_H
+#define GEX_SCENE_H
 
 #include <unordered_map>
 #include <vector>
@@ -28,4 +28,4 @@ namespace GEX {
   };
 }
 
-#endif //KAWARAGEX_SCENE_H
+#endif //GEX_SCENE_H

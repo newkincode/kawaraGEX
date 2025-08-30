@@ -2,18 +2,18 @@
 // Copyright (c) 2025 KawaraGEX.
 //
 
-#ifndef KAWARAGEX_RESOURCEMANAGER_H
-#define KAWARAGEX_RESOURCEMANAGER_H
+#ifndef GEX_RESOURCEMANAGER_H
+#define GEX_RESOURCEMANAGER_H
 #include <unordered_map>
 
-#include "../GEX_Object.h"
+#include "GEX_Object.h"
 
 using std::unordered_map;
 
 namespace GEX {
   class ResourceManager {
   public:
-    void addResource();
+    void addResource(const Object &obj);
 
     void removeResource();
 
@@ -22,4 +22,4 @@ namespace GEX {
   };
 }
 
-#endif //KAWARAGEX_RESOURCEMANAGER_H
+#endif //GEX_RESOURCEMANAGER_H
