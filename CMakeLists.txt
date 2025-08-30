@@ -9,11 +9,6 @@ set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/lib" CACHE PATH "Extra prefix for CMa
 # Include all files
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
-# Exclude files
-set(EXCLUDE_FILES
-        "src/core/Object.cpp"
-)
-
 list(REMOVE_ITEM SOURCES ${EXCLUDE_FILES})
 
 add_library(kawaraGEX SHARED
