@@ -5,26 +5,29 @@
 #ifndef GEX_SCENE_H
 #define GEX_SCENE_H
 
+#include <string>
 #include <unordered_map>
 #include <vector>
 
 #include "GEX_Object.h"
 
+using std::string;
 using std::unordered_map;
 using std::vector;
 
 namespace GEX {
   class Scene {
   public:
-    Scene();
+    explicit Scene(string t);
 
     void addGameObject(const Object &obj);
 
-    void destroyGameObject(const Object &obj);
+    void destroyGameObject(Object &obj);
 
   private:
-    unordered_map<uint32_t, Object> gameObjects;
-    vector<Object> destroyQueue;
+    string title;
+    unordered_map<Id, Object &> gameObjects;
+    vector<Object *> destroyQueue;
   };
 }
 

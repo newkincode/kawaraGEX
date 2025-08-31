@@ -4,7 +4,6 @@
 
 #ifndef GEX_OBJECT_H
 #define GEX_OBJECT_H
-#include <cstdint>
 
 #include "GEX_Id.h"
 
