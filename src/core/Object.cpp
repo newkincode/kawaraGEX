@@ -10,6 +10,6 @@ void Object::destroy() {
   delete this;
 }
 
-GEX_Id Object::getEntityId() const {
+Id Object::getEntityId() const {
   return entityID;
 }

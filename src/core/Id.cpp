@@ -6,14 +6,10 @@
 
 using namespace GEX;
 
-GEX_Id::GEX_Id() {
+Id::Id() {
   id = counter++;
 }
 
-GEX_Id GEX_Id::getId() const {
-  return id;
-}
-
-bool GEX_Id::operator==(const GEX_Id &other) const {
+bool Id::operator==(const Id &other) const {
   return id == other.id;
 }

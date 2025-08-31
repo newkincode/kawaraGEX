@@ -8,7 +8,7 @@
 #include "GEX_Attachment.h"
 
 namespace GEX {
-  class GEX_Mesh : public Attachment {
+  class Mesh : public Attachment {
   };
 }
 

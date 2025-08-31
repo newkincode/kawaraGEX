@@ -16,10 +16,10 @@ namespace GEX {
     virtual void onDestroy() {
     }
 
-    [[nodiscard]] GEX_Id getEntityId() const;
+    [[nodiscard]] Id getEntityId() const;
 
   private:
-    GEX_Id entityID;
+    Id entityID;
   };
 }
 

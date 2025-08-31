@@ -7,13 +7,11 @@
 #include <cstdint>
 
 namespace GEX {
-  class GEX_Id {
+  class Id {
   public:
-    GEX_Id();
+    Id();
 
-    GEX_Id getId() const;
-
-    bool operator==(const GEX_Id &other) const;
+    bool operator==(const Id &other) const;
 
   private:
     uint32_t id;

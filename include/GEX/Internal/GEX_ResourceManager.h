@@ -15,10 +15,12 @@ namespace GEX {
   public:
     void addResource(const Object &obj);
 
-    void removeResource();
+    void removeResource(const Id &id);
+
+    void removeResource(const Object &obj);
 
   private:
-    unordered_map<int, Object> resources;
+    unordered_map<Id, Object> resources;
   };
 }
 
