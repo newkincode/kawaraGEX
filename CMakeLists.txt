@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31.6)
+cmake_minimum_required(VERSION 4.0.2)
 
 project(kawaraGEX LANGUAGES CXX)
 
@@ -6,12 +6,13 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/lib" CACHE PATH "Extra prefix for CMake packages")
 
+# Include all files
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+
+list(REMOVE_ITEM SOURCES ${EXCLUDE_FILES})
+
 add_library(kawaraGEX SHARED
-        src/core/Engine.cpp
-        src/core/Object.cpp
-        src/core/attachments/Transform.cpp
-        src/scene/Scene.cpp
-        src/scene/GameObject.cpp
+        ${SOURCES}
         include/GEX/GEX.h
 )
 
