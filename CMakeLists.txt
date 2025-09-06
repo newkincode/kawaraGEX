@@ -15,12 +15,18 @@ add_library(kawaraGEX SHARED
         ${SOURCES}
         include/GEX/GEX.h
 )
+add_executable(load_image_exe src/examples/load_image_example.cpp)
+
 
 target_link_directories(kawaraGEX PRIVATE ${CMAKE_SOURCE_DIR}/lib)
 target_include_directories(kawaraGEX
         PUBLIC ${CMAKE_SOURCE_DIR}/include/GEX
         PRIVATE ${CMAKE_SOURCE_DIR}/include/SDL3
 )
+
+set(INCLUDE_DIRECTORIES ./)
+include_directories(include)
+
 target_link_libraries(kawaraGEX PRIVATE
         ${CMAKE_SOURCE_DIR}/lib/SDL3-static.lib
         winmm
@@ -29,3 +35,4 @@ target_link_libraries(kawaraGEX PRIVATE
         version
         imm32
 )
+
