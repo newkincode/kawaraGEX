@@ -4,7 +4,6 @@
 
 #ifndef GEX_MESH_H
 #define GEX_MESH_H
-
 #include "GEX_Attachment.h"
 
 namespace GEX {

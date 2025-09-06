@@ -8,10 +8,10 @@
 
 using namespace GEX;
 
-Engine::Engine() : title("Untitled") {
+Engine::Engine() : title("Untitled"), resourceManager() {
 }
 
-Engine::Engine(string t) : title(move(t)) {
+Engine::Engine(string t) : title(move(t)), resourceManager() {
 }
 
 string Engine::getTitle() const {

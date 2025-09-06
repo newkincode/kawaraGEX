@@ -4,7 +4,8 @@ project(kawaraGEX LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/lib" CACHE PATH "Extra prefix for CMake packages")
+file(GLOB GEX_HEADERS RELATIVE ${CMAKE_SOURCE_DIR}/include/GEX "${CMAKE_SOURCE_DIR}/include/GEX/*.h")
+
 
 # Include all files
 file(GLOB_RECURSE SOURCES "src/*.cpp")
@@ -13,7 +14,7 @@ list(REMOVE_ITEM SOURCES ${EXCLUDE_FILES})
 
 add_library(kawaraGEX SHARED
         ${SOURCES}
-        include/GEX/GEX.h
+        #        include/GEX/GEX.h
 )
 
 target_link_directories(kawaraGEX PRIVATE ${CMAKE_SOURCE_DIR}/lib)

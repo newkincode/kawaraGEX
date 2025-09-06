@@ -7,9 +7,13 @@
 
 #include <string>
 
+#include "Internal/GEX_ResourceManager.h"
+
 using std::string;
 
 namespace GEX {
+  class Scene;
+
   class Engine {
   public:
     Engine(); // Untitled Constructor
@@ -22,6 +26,10 @@ namespace GEX {
 
   private:
     std::string title;
+
+    ResourceManager &resourceManager;
+
+    Scene *currentScene;
   };
 }
 

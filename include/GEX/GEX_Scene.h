@@ -9,25 +9,25 @@
 #include <unordered_map>
 #include <vector>
 
-#include "GEX_Object.h"
-
 using std::string;
 using std::unordered_map;
 using std::vector;
 
 namespace GEX {
   class Scene {
+    friend class GameObject;
+
   public:
     explicit Scene(string t);
 
-    void addGameObject(const Object &obj);
-
-    void destroyGameObject(Object &obj);
+    void addGameObject(GameObject *obj);
 
   private:
     string title;
-    unordered_map<Id, Object &> gameObjects;
-    vector<Object *> destroyQueue;
+    vector<GameObject *> gameObjects;
+    vector<GameObject *> destroyQueue;
+
+    void destroyGameObject(GameObject *obj);
   };
 }
 

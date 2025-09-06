@@ -20,7 +20,7 @@ namespace GEX {
     void removeResource(const Object &obj);
 
   private:
-    unordered_map<Id, Object> resources;
+    unordered_map<Id, > resources;
   };
 }
 

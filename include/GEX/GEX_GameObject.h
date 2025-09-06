@@ -5,18 +5,31 @@
 #ifndef GEX_GAMEOBJECT_H
 #define GEX_GAMEOBJECT_H
 
-#include "GEX_Scene.h"
-#include "GEX_Transform.h"
+#include <vector>
+
+using std::vector;
 
 namespace GEX {
-  class GameObject : public Transform {
-  public:
-    static void destroy();
+  class Scene;
 
-    Scene *getScene() const;
+  class GameObject {
+  public:
+    void destroy();
+
+    vector<GameObject *> getChildren();
+
+    [[nodiscard]] Scene *getScene() const;
+
+    [[nodiscard]] bool isActive() const;
 
   private:
     Scene *scene = nullptr;
+
+    vector<GameObject *> children;
+
+    bool active = true;
+
+    GameObject() = default;
   };
 }
 
